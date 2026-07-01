@@ -37,9 +37,13 @@ python cli.py explain <id_A> <id_B> --inputs Master.csv
 ## 🏗️ Architecture
 
 ```
-Upload → PDF Detection → Text Extraction → Layout Analysis
-       → Field Extraction → Skill Matching → Validation
-       → Confidence Scoring → Export (Excel/CSV)
+Source Ingestion (Adapters)
+  ↳ Normalization Engine (Format & Type Standardization)
+    ↳ Comparison Engine (Blocking & Eligibility)
+      ↳ Identity Resolution (Rules, Similarity & Decision Logic)
+        ↳ Resolution Pipeline (Cluster Graph & Validation)
+          ↳ Merge Engine (Conflict Resolution & Provenance)
+            ↳ Projection Engine (Configurable Schema Output)
 ```
 
 ---
@@ -152,23 +156,27 @@ pytest tests/ --cov=app --cov-report=html
 ```
 resume_extractor/
 ├── app/
-│   ├── main.py              # FastAPI app entry point
-│   ├── config.py            # Settings & env vars
-│   ├── api/                 # Routes & middleware
-│   ├── core/                # PDF parsing & pipeline
-│   ├── extraction/          # Field extractors
-│   ├── nlp/                 # NLP utilities
-│   ├── matching/            # Skill & title normalization
-│   ├── validation/          # Schema validation
-│   ├── export/              # Excel & CSV generation
-│   ├── database/            # DB connection & repos
-│   ├── models/              # ORM models & schemas
-│   └── storage/             # File handling
-├── artifacts/               # Golden outputs and regression hashes
-├── docs/                    # Architecture, design decisions, checklists
+│   ├── adapters/            # Ingestion layer (CSV, Resumes)
+│   ├── core/                # Core extraction & parsing (PyMuPDF)
+│   ├── extraction/          # Explicit field extractors (Contacts, GitHub links)
+│   ├── models/              # Canonical schemas and enums
+│   ├── nlp/                 # Text cleaning and NER (spaCy)
+│   ├── pipeline/
+│   │   ├── normalization/   # Standardization and cleaning rules
+│   │   ├── comparison/      # Blocking, Comparators, Eligibility engine
+│   │   ├── identity_resolution/ # Deterministic matching logic (Rules, Similarity)
+│   │   └── resolution/      # Clustering, merging, conflicts, and projection
+│   └── utils/               # Constants and logging
+├── artifacts/               # Golden outputs and compliance documents
+├── config/                  # YAML configurations (Thresholds, Conflict, Projection)
+├── generated_data/          # Augmented testing datasets
 ├── temp/                    # Temporary logs and tracebacks
-├── tests/                   # Test suite
+├── tests/                   # Extensive pytest suite
 ├── tools/                   # Developer tools for verification, scripts and diagnostics
+├── cli.py                   # Primary entrypoint for pipeline execution
+├── commands.md              # CLI reference guide
+├── file_context.md          # Comprehensive architectural index
+├── technical_design.md      # Final technical design document
 ├── Dockerfile
 ├── docker-compose.yml
 └── requirements.txt
