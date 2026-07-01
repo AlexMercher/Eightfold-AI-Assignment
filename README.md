@@ -82,71 +82,15 @@ python cli.py run --inputs Master.csv --projection assignment_example
 
 For full documentation on available commands (including `doctor`, `verify`, `explain`, and `stats`), see [commands.md](commands.md).
 
-### 3. Start with Docker
-
-```bash
-docker-compose up --build
-```
-
-### 4. Start Locally
-
-```bash
-uvicorn app.main:app --reload --port 8000
-```
-
-API docs: http://localhost:8000/docs
-
----
-
-## 📦 Tech Stack
-
-| Layer            | Technology                        |
-|------------------|-----------------------------------|
-| API Framework    | FastAPI + Uvicorn                 |
-| Digital PDF      | PyMuPDF + pdfplumber              |
-| Scanned PDF      | PaddleOCR + PP-Structure          |
-| Layout Analysis  | Geometric + heuristic analysis    |
-| NLP / NER        | spaCy (en_core_web_md)            |
-| Skill Matching   | RapidFuzz + ESCO taxonomy         |
-| Database         | PostgreSQL + SQLAlchemy           |
-| Export           | openpyxl (Excel) + pandas (CSV)   |
-| Containerization | Docker + Docker Compose           |
-
----
-
-## 🔌 API Endpoints
-
-| Method | Endpoint                        | Description              |
-|--------|---------------------------------|--------------------------|
-| POST   | `/api/v1/upload/`               | Upload single resume     |
-| POST   | `/api/v1/upload/batch`          | Upload multiple resumes  |
-| GET    | `/api/v1/upload/{id}/status`    | Check processing status  |
-| GET    | `/api/v1/upload/`               | List all resumes         |
-| DELETE | `/api/v1/upload/{id}`           | Delete a resume          |
-| POST   | `/api/v1/extract/{id}`          | Trigger extraction       |
-| GET    | `/api/v1/extract/{id}/result`   | Get extraction result    |
-| POST   | `/api/v1/extract/bulk`          | Bulk extract             |
-| POST   | `/api/v1/export/`               | Generate Excel/CSV       |
-| GET    | `/api/v1/export/download/{file}`| Download export file     |
-| GET    | `/api/v1/export/stream/csv`     | Stream CSV response      |
-| GET    | `/api/v1/export/{id}/excel`     | Export single to Excel   |
-| GET    | `/health`                       | Health check             |
-
----
-
+ 
 ## 🧪 Running Tests
 
 ```bash
-# Install dev dependencies
-pip install -r requirements-dev.txt
+# 1. Run architecture and invariant verification
+python cli.py verify
 
-# Run all tests
-pytest tests/ -v
-
-# Run with coverage
-pytest tests/ --cov=app --cov-report=html
-
-
+# 2. Run the full pytest test suite
+pytest
 ```
 
 ---
@@ -170,78 +114,20 @@ resume_extractor/
 ├── artifacts/               # Golden outputs and compliance documents
 ├── config/                  # YAML configurations (Thresholds, Conflict, Projection)
 ├── generated_data/          # Augmented testing datasets
-├── temp/                    # Temporary logs and tracebacks
+├── logs/                    # Application and error logs
 ├── tests/                   # Extensive pytest suite
 ├── tools/                   # Developer tools for verification, scripts and diagnostics
 ├── cli.py                   # Primary entrypoint for pipeline execution
 ├── commands.md              # CLI reference guide
 ├── file_context.md          # Comprehensive architectural index
 ├── technical_design.md      # Final technical design document
-├── Dockerfile
-├── docker-compose.yml
+├── Master.csv               # Primary demonstration dataset
+├── .env.example             # Example environment configuration
 └── requirements.txt
 ```
-
 ---
 
-## ⚙️ Environment Variables
-
-Copy `.env.example` to `.env` and configure:
-
-```env
-DATABASE_URL=postgresql://postgres:password@localhost:5432/resume_db
-APP_ENV=development
-DEBUG=True
-OCR_USE_GPU=False
-SKILLS_FUZZY_THRESHOLD=80
-MAX_UPLOAD_SIZE_MB=10
-```
-
----
-
-## 📊 Extraction Output
-
-```json
-{
-  "contact": {
-    "full_name": "John Smith",
-    "email": "john@example.com",
-    "phone": "+1 555-123-4567",
-    "linkedin": "https://linkedin.com/in/johnsmith"
-  },
-  "experience": [{
-    "job_title": "Senior Software Engineer",
-    "company": "Google",
-    "start_date": "Jan 2021",
-    "end_date": "Present",
-    "is_current": true,
-    "duration_years": 3.5
-  }],
-  "education": [{
-    "degree": "Bachelor of Science",
-    "field_of_study": "Computer Science",
-    "institution": "MIT",
-    "graduation_date": "Jun 2018",
-    "gpa": "3.8/4.0"
-  }],
-  "skills": {
-    "all": ["Python", "Django", "Docker", "AWS"],
-    "programming_languages": ["Python"],
-    "frameworks": ["Django"],
-    "cloud_devops": ["Docker", "AWS"]
-  },
-  "confidence_scores": {
-    "overall": 0.87,
-    "contact": 0.95,
-    "experience": 0.82
-  }
-}
-```
-
----
-
+ 
 ## 👥 Author
 
-- **Name**: Shewan Dagne
-- **Email**: [shewan.dagne.1@gmail.com](mailto:shewan.dagne.1@gmail.com)
-- **GitHub**: [sdagne](https://github.com/sdagne)
+- **Name**: Himanshu Ranjan
