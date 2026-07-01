@@ -1,0 +1,26 @@
+{
+    "generation_timestamp": "2026-07-01T00:04:14.290608",
+    "augmentation_tool_version": "1.0.0",
+    "random_seed": 42,
+    "total_master_candidates": 8,
+    "total_matching_candidates": 8,
+    "total_conflict_candidates": 16,
+    "total_new_candidates": 10,
+    "augmentation_strategies_used": {
+        "name_strategies": 5,
+        "phone_strategies": 4,
+        "email_strategies": 3,
+        "company_strategies": 4,
+        "job_title_strategies": 3,
+        "skills_strategies": 4,
+        "location_strategies": 4,
+        "education_strategies": 3,
+        "university_strategies": 3
+    },
+    "output_file_locations": {
+        "matching": "generated_data\\matching_candidates.csv",
+        "conflict": "generated_data\\conflict_candidates.csv",
+        "new": "generated_data\\new_candidates.csv",
+        "ground_truth": "generated_data\\ground_truth.csv"
+    }
+}

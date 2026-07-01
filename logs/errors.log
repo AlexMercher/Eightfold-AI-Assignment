@@ -1,0 +1,50 @@
+2026-07-01 03:14:45 | ERROR    | app.nlp.ner_engine:__init__:15 | No Spacy models found. NER will fail.
+2026-07-01 04:52:49 | ERROR    | app.nlp.ner_engine:__init__:15 | No Spacy models found. NER will fail.
+2026-07-01 04:53:30 | ERROR    | app.nlp.ner_engine:__init__:15 | No Spacy models found. NER will fail.
+2026-07-01 04:54:26 | ERROR    | app.nlp.ner_engine:__init__:15 | No Spacy models found. NER will fail.
+2026-07-01 04:55:10 | ERROR    | app.nlp.ner_engine:__init__:15 | No Spacy models found. NER will fail.
+2026-07-01 04:55:33 | ERROR    | app.nlp.ner_engine:__init__:15 | No Spacy models found. NER will fail.
+2026-07-01 04:56:01 | ERROR    | app.nlp.ner_engine:__init__:15 | No Spacy models found. NER will fail.
+2026-07-01 04:56:42 | ERROR    | app.nlp.ner_engine:__init__:15 | No Spacy models found. NER will fail.
+2026-07-01 04:57:14 | ERROR    | app.nlp.ner_engine:__init__:15 | No Spacy models found. NER will fail.
+2026-07-01 05:18:54 | ERROR    | app.nlp.ner_engine:__init__:15 | No Spacy models found. NER will fail.
+2026-07-01 05:19:16 | ERROR    | app.nlp.ner_engine:__init__:15 | No Spacy models found. NER will fail.
+2026-07-01 05:19:35 | ERROR    | app.nlp.ner_engine:__init__:15 | No Spacy models found. NER will fail.
+2026-07-01 05:19:59 | ERROR    | app.nlp.ner_engine:__init__:15 | No Spacy models found. NER will fail.
+2026-07-01 05:20:21 | ERROR    | app.nlp.ner_engine:__init__:15 | No Spacy models found. NER will fail.
+2026-07-01 05:20:43 | ERROR    | app.nlp.ner_engine:__init__:15 | No Spacy models found. NER will fail.
+2026-07-01 05:20:45 | ERROR    | app.core.pipeline:_stage:532 | Stage 'schema_validation' failed after 0.004s: name 'datetime' is not defined
+2026-07-01 05:21:08 | ERROR    | app.nlp.ner_engine:__init__:15 | No Spacy models found. NER will fail.
+2026-07-01 05:21:10 | ERROR    | app.core.pipeline:_stage:532 | Stage 'schema_validation' failed after 0.001s: name 'datetime' is not defined
+2026-07-01 05:21:10 | ERROR    | app.core.pipeline:_stage:532 | Stage 'schema_validation' failed after 0.001s: name 'datetime' is not defined
+2026-07-01 05:21:11 | ERROR    | app.core.pipeline:_stage:532 | Stage 'schema_validation' failed after 0.001s: name 'datetime' is not defined
+2026-07-01 05:21:12 | ERROR    | app.core.pipeline:_stage:532 | Stage 'schema_validation' failed after 0.001s: name 'datetime' is not defined
+2026-07-01 05:21:25 | ERROR    | app.nlp.ner_engine:__init__:15 | No Spacy models found. NER will fail.
+2026-07-01 05:21:26 | ERROR    | app.core.pipeline:_stage:532 | Stage 'schema_validation' failed after 0.005s: name 'datetime' is not defined
+2026-07-01 05:21:39 | ERROR    | app.nlp.ner_engine:__init__:15 | No Spacy models found. NER will fail.
+2026-07-01 05:22:08 | ERROR    | app.nlp.ner_engine:__init__:15 | No Spacy models found. NER will fail.
+2026-07-01 05:22:28 | ERROR    | app.nlp.ner_engine:__init__:15 | No Spacy models found. NER will fail.
+2026-07-01 05:23:10 | ERROR    | app.nlp.ner_engine:__init__:15 | No Spacy models found. NER will fail.
+2026-07-01 05:23:16 | ERROR    | app.core.pdf_detector:detect:55 | Failed to open PDF: no such file: 'non_existent.pdf'
+2026-07-01 05:23:32 | ERROR    | app.nlp.ner_engine:__init__:15 | No Spacy models found. NER will fail.
+2026-07-01 05:23:55 | ERROR    | app.nlp.ner_engine:__init__:15 | No Spacy models found. NER will fail.
+2026-07-01 05:24:04 | ERROR    | app.nlp.ner_engine:__init__:15 | No Spacy models found. NER will fail.
+2026-07-01 05:24:43 | ERROR    | app.nlp.ner_engine:__init__:15 | No Spacy models found. NER will fail.
+2026-07-01 05:26:32 | ERROR    | app.nlp.ner_engine:__init__:15 | No Spacy models found. NER will fail.
+2026-07-01 05:26:43 | ERROR    | app.nlp.ner_engine:__init__:15 | No Spacy models found. NER will fail.
+2026-07-01 05:26:53 | ERROR    | app.nlp.ner_engine:__init__:15 | No Spacy models found. NER will fail.
+2026-07-01 05:26:55 | ERROR    | app.core.pdf_detector:detect:55 | Failed to open PDF: no such file: 'non_existent.pdf'
+2026-07-01 05:27:07 | ERROR    | app.nlp.ner_engine:__init__:15 | No Spacy models found. NER will fail.
+2026-07-01 05:27:18 | ERROR    | app.nlp.ner_engine:__init__:15 | No Spacy models found. NER will fail.
+2026-07-01 05:29:11 | ERROR    | app.nlp.ner_engine:__init__:15 | No Spacy models found. NER will fail.
+2026-07-01 05:29:23 | ERROR    | app.nlp.ner_engine:__init__:15 | No Spacy models found. NER will fail.
+2026-07-01 05:29:34 | ERROR    | app.nlp.ner_engine:__init__:15 | No Spacy models found. NER will fail.
+2026-07-01 05:29:51 | ERROR    | app.nlp.ner_engine:__init__:15 | No Spacy models found. NER will fail.
+2026-07-01 05:30:00 | ERROR    | app.nlp.ner_engine:__init__:15 | No Spacy models found. NER will fail.
+2026-07-01 05:30:56 | ERROR    | app.nlp.ner_engine:__init__:15 | No Spacy models found. NER will fail.
+2026-07-01 05:32:02 | ERROR    | app.nlp.ner_engine:__init__:15 | No Spacy models found. NER will fail.
+2026-07-01 05:32:18 | ERROR    | app.nlp.ner_engine:__init__:15 | No Spacy models found. NER will fail.
+2026-07-01 05:32:50 | ERROR    | app.nlp.ner_engine:__init__:15 | No Spacy models found. NER will fail.
+2026-07-01 05:33:14 | ERROR    | app.nlp.ner_engine:__init__:15 | No Spacy models found. NER will fail.
+2026-07-01 05:33:26 | ERROR    | app.nlp.ner_engine:__init__:15 | No Spacy models found. NER will fail.
+2026-07-01 05:33:37 | ERROR    | app.nlp.ner_engine:__init__:15 | No Spacy models found. NER will fail.

@@ -1,0 +1,33 @@
+# Virtual Environments
+venv/
+.venv/
+env/
+.env
+
+# Python Caches & Artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
+
+# Project Specific (Based on file_context.md)
+# Output directories from CLI runs
+output/
+
+# Temporary logs and tracebacks
+temp/
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS Generated
+.DS_Store
+Thumbs.db

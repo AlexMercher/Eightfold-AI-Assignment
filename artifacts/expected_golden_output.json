@@ -1,0 +1,64 @@
+{
+  "candidate_id": "mock_cand_1",
+  "full_name": "Himanshu Ranjan",
+  "emails": [
+    "himanshuranjan2408@gmail.com"
+  ],
+  "phones": [
+    "+1234567890"
+  ],
+  "location": "San Francisco, CA",
+  "links": [
+    {
+      "platform": "GitHub",
+      "url": "https://github.com/himanshuranjan"
+    }
+  ],
+  "headline": "Software Engineer",
+  "years_experience": 5.0,
+  "skills": [
+    {
+      "name": "JavaScript"
+    },
+    {
+      "name": "Python"
+    }
+  ],
+  "experience": [
+    {
+      "company": "Tech Corp",
+      "title": "Engineer",
+      "start": "2020",
+      "end": "2022",
+      "summary": "Worked on backend"
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Tech",
+      "degree": "B.S.",
+      "field": "CS",
+      "end_year": "2020"
+    }
+  ],
+  "provenance": {
+    "personal_info.name": {
+      "source_candidates": ["himanshu_pdf", "himanshu_csv"],
+      "merge_decision_path": "longest_string"
+    },
+    "professional_info.skills": {
+      "source_candidates": ["himanshu_pdf"],
+      "merge_decision_path": "union"
+    }
+  },
+  "confidence": {
+    "level": "HIGH",
+    "conflict_count": 0,
+    "source_count": 2,
+    "reasoning": "Single source"
+  },
+  "sources": [
+    "himanshu_csv",
+    "himanshu_pdf"
+  ]
+}

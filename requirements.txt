@@ -1,0 +1,46 @@
+# API Framework
+fastapi>=0.115.0
+uvicorn[standard]>=0.32.0
+python-multipart>=0.0.17
+
+# PDF Parsing
+pdfplumber>=0.11.0
+PyMuPDF>=1.24.3
+pdfminer.six>=20231228
+
+# OCR & Layout Analysis
+opencv-python
+
+# NLP & Language
+spacy>=3.7.4
+langdetect>=1.0.9
+python-dateutil>=2.9.0
+nltk>=3.8.1
+
+# Fuzzy Matching
+rapidfuzz>=3.9.0
+
+# Validation
+pydantic>=2.10.0
+pydantic-settings>=2.7.0
+email-validator>=2.2.0
+
+# Data Processing
+pandas>=2.2.2
+
+# Infrastructure
+python-dotenv==1.0.0
+
+# Added for Multi-Source
+phonenumbers==8.13.26
+
+# Added for Comparison
+rapidfuzz==3.9.3
+loguru>=0.7.2
+httpx>=0.27.0
+pyyaml>=6.0.2
+
+# Added for CLI and Testing
+pytest>=8.0.0
+networkx>=3.0.0
+matplotlib>=3.7.0

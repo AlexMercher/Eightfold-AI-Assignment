@@ -1,0 +1,60 @@
+□ 1. Project Structure & Architecture
+
+□ 2. Canonical Candidate Data Model
+
+□ 3. Source Metadata Model
+
+□ 4. Provenance Data Model
+
+□ 5. Confidence Data Model
+
+□ 6. Configuration Management
+
+□ 7. Multi-Source Input Layer
+
+□ 8. Source Detection & Routing
+
+□ 9. Resume (PDF) Extractor
+
+□ 10. CSV Extractor
+
+□ 11. Canonical Record Builder
+
+□ 12. Data Normalization Engine
+    □ Phone Normalization
+    □ Email Normalization
+    □ Name Normalization
+    □ Skills Normalization
+    □ Company Normalization
+    □ Date Normalization
+    □ Location Normalization
+
+□ 13. Field Validation Engine
+
+□ 14. Candidate Identity Resolution Engine
+
+□ 15. Candidate Similarity Scoring Engine
+
+□ 16. Candidate Merge Engine
+
+□ 17. Conflict Resolution Engine
+
+□ 18. Provenance Tracking Engine
+
+□ 19. Confidence Scoring Engine
+
+□ 20. Configurable Projection Engine
+
+□ 21. Final Schema Validation
+
+□ 22. JSON Response Generator
+
+□ 23. FastAPI Endpoints
+
+□ 24. Sample Data & Test Dataset
+
+□ 25. Unit Tests
+
+□ 26. Integration Tests
+
+□ 27. Documentation (README + Architecture + Assumptions)
