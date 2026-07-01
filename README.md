@@ -130,4 +130,4 @@ resume_extractor/
  
 ## 👥 Author
 
-- **Name**: Himanshu Ranjan
+- **Name**: Himanshu Ranjan(Alex Mercher)
